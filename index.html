@@ -41,7 +41,28 @@
             </div>
         </script>
         <script>
-            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
+            // let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
+
+            function createArtworkElement(context) {
+                let div = document.createElement("div");
+                div.classList.add("artwork");
+                
+                let img = document.createElement("img");
+                img.src = context.imageURL;
+
+                let artistLink = document.createElement("a");
+                artistLink.href = context.artistURL;
+                artistLink.innerText = context.artistName;
+
+                let paragraph = document.createElement("p");
+                paragraph.innerText = "🎨: "
+                paragraph.appendChild(artistLink);
+
+                div.appendChild(img);
+                div.appendChild(paragraph);
+
+                return div;
+            }
 
             fetch("images.json")
             .then(response => response.json())
@@ -53,7 +74,7 @@
                     context['imageURL'] = 'https://cdn.hothusky.art/' + image.url;
                     context['artistName'] = image.artist;
                     context['artistURL'] = artists[image.artist];
-                    document.getElementById("art").append(artworkTemplate(context))
+                    document.getElementById("art").append(createArtworkElement(context))
                 });
             })
         </script>
