@@ -29,6 +29,11 @@
     <body>
         <div class="container art">
             <h2>Just a good-lookin husky. Enjoy.</h2>
+            <input id="toggle" class="toggle" type="checkbox" role="switch" name="toggle" value="on">
+            <label for="toggle" class="slot">
+                <span class="slot__label">SFW</span>
+                <span class="slot__label">NSFW</span>
+            </label>
             <div>
                 <div class="artwork-grid grid-200" id="art">
 
@@ -41,6 +46,10 @@
             function createArtworkElement(context) {
                 let div = document.createElement("div");
                 div.classList.add("artwork");
+                if(context.nsfw) {
+                    div.classList.add('nsfw');
+                    div.classList.add('hidden');
+                }
                 
                 let img = document.createElement("img");
                 img.src = context.imageURL;
@@ -89,6 +98,7 @@
                     context['imageURL'] = 'https://cdn.hothusky.art/' + image.url;
                     context['artistName'] = image.artist;
                     context['artistURL'] = artists[image.artist];
+                    context['nsfw'] = image.nsfw;
                     document.getElementById("art").append(createArtworkElement(context))
                 });
             })
