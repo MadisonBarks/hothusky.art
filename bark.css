@@ -8,6 +8,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body, input {
+    color: #fff;
+}
+
 a {
     color: rgb(138,180,248);
     font-weight: 400;
@@ -57,7 +61,7 @@ h2 {
 }
 
 .hidden {
-    display: hidden;
+    display: none;
 }
 
 #nsfwtoggle {
