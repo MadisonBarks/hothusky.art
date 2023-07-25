@@ -60,6 +60,11 @@ h2 {
     display: hidden;
 }
 
+#nsfwtoggle {
+    color: #fff;
+    justify-content: center;
+}
+
 .toggle, .toggle:before, .slot__label, .curtain {
 	transition-property: background-color, transform, visibility;
 	transition-duration: 0.25s;
