@@ -13,14 +13,14 @@
         <meta property="og:url" content="https://hothusky.art">
         <meta property="og:title" content="Bark Bark">
         <meta property="og:description" content="The image gallery of a certain good-lookin husky. ">
-        <meta property="og:image" content="https://imagedelivery.net/jb1KUfPMzvjkP9RN0qd3Xw/d9c29aab-aa48-40e9-12da-6f0804a08000/public">
+        <meta property="og:image" content="https://cdn.hothusky.art/CajunFoxNight_Madi_Pride_Icon.jpg">
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://hothusky.art">
         <meta property="twitter:title" content="Bark Bark">
         <meta property="twitter:description" content="The image gallery of a certain good-lookin husky. ">
-        <meta property="twitter:image" content="https://imagedelivery.net/jb1KUfPMzvjkP9RN0qd3Xw/d9c29aab-aa48-40e9-12da-6f0804a08000/public">
+        <meta property="twitter:image" content="https://cdn.hothusky.art/CajunFoxNight_Madi_Pride_Icon.jpg">
 
         <link rel="stylesheet" href="bark.css">
     </head>
@@ -33,13 +33,6 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script id="artwork-template" type="text/x-handlebars-template">
-            <div id="artwork">
-                <img src="{{imageURL}}" />
-                <p>🎨: <a href="{{artistURL}}">{{artistName}}</a></p>
-            </div>
-        </script>
         <script>
             // let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
 
@@ -50,18 +43,19 @@
                 let img = document.createElement("img");
                 img.src = context.imageURL;
 
-                let artistLink = document.createElement("a");
-                artistLink.href = context.artistURL;
-                artistLink.innerText = context.artistName;
+                // let artistLink = document.createElement("a");
+                // artistLink.href = context.artistURL;
+                // artistLink.innerText = context.artistName;
 
-                let paragraph = document.createElement("p");
-                paragraph.innerText = "🎨: "
-                paragraph.appendChild(artistLink);
+                // let paragraph = document.createElement("p");
+                // paragraph.innerText = "🎨: "
+                // paragraph.appendChild(artistLink);
 
-                div.appendChild(img);
-                div.appendChild(paragraph);
+                // div.appendChild(img);
+                // div.appendChild(paragraph);
 
-                return div;
+                // return div;
+                return img;
             }
 
             fetch("images.json")
