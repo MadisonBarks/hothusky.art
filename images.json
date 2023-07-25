@@ -6,19 +6,19 @@
         "BelethThorn": "https://www.furaffinity.net/beleththorn",
         "Bertii": "https://www.twitter.com/bertii_art",
         "Blitzy": "https://www.twitter.com/BlitzyArts",
-        "bourbon": "https://www.furaffinity.net/bourbon.",
+        "Bourbon": "https://www.furaffinity.net/bourbon.",
         "Bunner": "https://www.twitter.com/tinybunner",
         "CajunFoxNight": "https://www.twitter.com/CajunFoxNight",
-        "cocopyma": "https://www.furaffinity.net/cocopyma",
-        "crowtaur": "https://www.twitter.com/crowtaurarts",
+        "Cocopyma": "https://www.furaffinity.net/cocopyma",
+        "Crowtaur": "https://www.twitter.com/crowtaurarts",
         "CrystalHaze": "https://www.furaffinity.net/crystalhaze",
-        "darkomi": "https://www.twitter.com/Vernon_Cross",
+        "Darkomi": "https://www.twitter.com/Vernon_Cross",
         "Eastern Dragon Studios": "https://www.furaffinity.net/eastern.dragon.studios",
         "Elking": "https://www.twitter.com/ElkingArt",
         "Evange": "https://www.furaffinity.net/evange",
         "emufur": "https://www.twitter.com/ellaemufur",
         "famousartpotato": "https://www.twitter.com/famousartpotato",
-        "flufflix": "https://www.twitter.com/GlitterySylveon",
+        "Flufflix": "https://www.twitter.com/GlitterySylveon",
         "Freeze-Pop88": "https://www.furaffinity.net/freeze-pop88",
         "FurBakery": "https://www.twitter.com/FurBakery",
         "GeeWolf": "https://www.twitter.com/Art_GeeWolf",
@@ -31,27 +31,27 @@
         "Kynli": "https://www.furaffinity.net/kynli",
         "Lilyote": "https://www.deviantart.com/lilyote",
         "Lindseyvi": "https://www.twitter.com/LindseyVi__",
-        "lukiri": "https://www.furaffinity.net/reilukah",
+        "Lukiri": "https://www.furaffinity.net/reilukah",
         "Moss the Poss": "https://www.twitter.com/MosstheOpossum",
         "Muttasaur": "https://www.twitter.com/Muttasaur",
-        "oddends": "https://www.furaffinity.net/oddends",
-        "peachygho": "https://www.furaffinity.net/peachygho",
-        "pupbii": "https://www.twitter.com/seraphictiger",
-        "ractah": "https://www.furaffinity.net/ractah",
-        "riafeir": "https://www.twitter.com/Riafeir",
-        "ribbon": "https://www.twitter.com/ribbontini",
-        "sheggyti": "https://www.furaffinity.net/sheggyti",
-        "skeleion": "https://www.twitter.com/The_Invad3r",
-        "spacepoptart": "https://www.twitter.com/spacepoptart",
-        "sparksreactor": "https://www.twitter.com/SparksReactor",
-        "stechow": "https://www.furaffinity.net/stechow",
-        "sugarfoxxart": "https://www.twitter.com/IN4RI_",
+        "Oddends": "https://www.furaffinity.net/oddends",
+        "Peachygho": "https://www.furaffinity.net/peachygho",
+        "Pupbii": "https://www.twitter.com/seraphictiger",
+        "Ractah": "https://www.furaffinity.net/ractah",
+        "Riafeir": "https://www.twitter.com/Riafeir",
+        "Ribbon": "https://www.twitter.com/ribbontini",
+        "Sheggyti": "https://www.furaffinity.net/sheggyti",
+        "Skeleion": "https://www.twitter.com/The_Invad3r",
+        "SpacePopTart": "https://www.twitter.com/spacepoptart",
+        "SparksReactor": "https://www.twitter.com/SparksReactor",
+        "Stechow": "https://www.furaffinity.net/stechow",
+        "SugarFoxxArt": "https://www.twitter.com/IN4RI_",
         "TaiLung": "https://www.furaffinity.net/tailung",
-        "tohrufusky": "https://www.twitter.com/tohrufusky",
-        "tricksterkat": "https://www.furaffinity.net/tricksterkat",
-        "xainy": "https://www.twitter.com/thexainy",
+        "Tohrufusky": "https://www.twitter.com/tohrufusky",
+        "Tricksterkat": "https://www.furaffinity.net/tricksterkat",
+        "Xainy": "https://www.twitter.com/thexainy",
         "Yoko Darkpaw": "https://www.furaffinity.net/yoko-darkpaw",
-        "zeir0": "https://www.furaffinity.net/zeir0"
+        "Zeir0": "https://www.furaffinity.net/zeir0"
 
     },
     "images": [
@@ -125,11 +125,11 @@
         },
         {
             "url":  "Eastern_Dragon_Studios_Madi_Harness.jpeg",
-            "artist":  "Eastern"
+            "artist":  "Eastern Dragon Studios"
         },
         {
             "url":  "Eastern_Dragon_Studios_Madi_Wanna_Play.jpeg",
-            "artist":  "Eastern"
+            "artist":  "Eastern Dragon Studios"
         },
         {
             "url":  "Elking_Beach_Madi_Umbrella.png",
@@ -170,10 +170,6 @@
         {
             "url":  "Evange_Madi_x_Kylon.png",
             "artist":  "Evange"
-        },
-        {
-            "url":  "export.png",
-            "artist":  "export.png"
         },
         {
             "url":  "famousartpotato_Madi_Chase_Tail.png",
@@ -277,19 +273,15 @@
         },
         {
             "url":  "oddends_YCH.jpeg",
-            "artist":  "oddends"
+            "artist":  "Oddends"
         },
         {
             "url":  "peachygho_Madi_Leash_NSFW.png",
-            "artist":  "peachygho"
+            "artist":  "Peachygho"
         },
         {
             "url":  "Peachygho_Madi_Selfie.jpeg",
             "artist":  "Peachygho"
-        },
-        {
-            "url":  "photo_2022-01-01_17-55-24.jpg",
-            "artist":  "photo"
         },
         {
             "url":  "Pupbii_Madi_Sketch.jpg",
@@ -297,7 +289,7 @@
         },
         {
             "url":  "ractah_Madi_Movie_Screenshot.jpg",
-            "artist":  "ractah"
+            "artist":  "Ractah"
         },
         {
             "url":  "Riafeir_Madi_Angry_Sticker.png",
@@ -669,7 +661,7 @@
         },
         {
             "url":  "Yoko_Darkpaw_Orgy.png",
-            "artist":  "Yoko"
+            "artist":  "Yoko Darkpaw"
         },
         {
             "url":  "Zeir0_Madi_Tentacles.jpg",
