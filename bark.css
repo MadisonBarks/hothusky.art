@@ -5,6 +5,13 @@
 
 body {
     background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: rgb(138,180,248);
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .artwork-grid {
