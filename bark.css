@@ -34,6 +34,7 @@ body {
 .artwork {
     width: 250px;
     text-align: center;
+    break-inside: avoid;
 }
 
 img {
