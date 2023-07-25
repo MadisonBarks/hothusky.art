@@ -103,7 +103,16 @@
                     context['nsfw'] = image.nsfw;
                     document.getElementById("art").append(createArtworkElement(context))
                 });
-            })
+            });
+
+            document.getElementById("toggle").addEventListener("change",function() {
+                if(this.checked) {
+                    document.querySelectorAll('.nsfw').forEach(element => element.classList.remove('hidden'));
+                }
+                else {
+                    document.querySelectorAll('.nsfw').forEach(element => element.classList.add('hidden'));
+                }
+            });
         </script>
     </body>
 </html>
