@@ -41,7 +41,7 @@
             </div>
         </script>
         <script>
-            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").html());
+            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
 
             fetch("images.json")
             .then(response => response.json())
