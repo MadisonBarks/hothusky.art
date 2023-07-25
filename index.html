@@ -28,7 +28,7 @@
         <div class="container art">
             <h2>Just a good-lookin husky. Enjoy.</h2>
             <div>
-                <div class="artwork-grid grid-400" id="art">
+                <div class="artwork-grid grid-200" id="art">
 
                 </div>
             </div>
@@ -43,19 +43,19 @@
                 let img = document.createElement("img");
                 img.src = context.imageURL;
 
-                // let artistLink = document.createElement("a");
-                // artistLink.href = context.artistURL;
-                // artistLink.innerText = context.artistName;
+                let artistLink = document.createElement("a");
+                artistLink.href = context.artistURL;
+                artistLink.innerText = context.artistName;
 
-                // let paragraph = document.createElement("p");
-                // paragraph.innerText = "🎨: "
-                // paragraph.appendChild(artistLink);
+                let paragraph = document.createElement("p");
+                paragraph.innerText = "🎨: "
+                paragraph.appendChild(artistLink);
 
-                // div.appendChild(img);
-                // div.appendChild(paragraph);
+                div.appendChild(img);
+                div.appendChild(paragraph);
 
-                // return div;
-                return img;
+                return div;
+                // return img;
             }
 
             fetch("images.json")
