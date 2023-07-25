@@ -41,7 +41,7 @@
             </div>
         </script>
         <script>
-            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
+            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").html());
 
             fetch("images.json")
             .then(response => response.json())
@@ -53,7 +53,7 @@
                     context['imageURL'] = 'https://cdn.hothusky.art/' + image.url;
                     context['artistName'] = image.artist;
                     context['artistURL'] = artists[image.artist];
-                    document.getElementById("art").appendChild(artworkTemplate(context))
+                    document.getElementById("art").append(artworkTemplate(context))
                 });
             })
         </script>
