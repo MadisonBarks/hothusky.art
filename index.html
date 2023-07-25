@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>Bark Bark</title>
+        <meta name="title" content="Bark Bark">
+        <meta name="description" content="The image gallery of a certain good-lookin husky. ">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://hothusky.art">
+        <meta property="og:title" content="Bark Bark">
+        <meta property="og:description" content="The image gallery of a certain good-lookin husky. ">
+        <meta property="og:image" content="https://imagedelivery.net/jb1KUfPMzvjkP9RN0qd3Xw/d9c29aab-aa48-40e9-12da-6f0804a08000/public">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://hothusky.art">
+        <meta property="twitter:title" content="Bark Bark">
+        <meta property="twitter:description" content="The image gallery of a certain good-lookin husky. ">
+        <meta property="twitter:image" content="https://imagedelivery.net/jb1KUfPMzvjkP9RN0qd3Xw/d9c29aab-aa48-40e9-12da-6f0804a08000/public">
+
+        <link rel="stylesheet" href="bark.css">
+    </head>
+    <body>
+        <div class="container art">
+            <h2>Just a good-lookin husky. Enjoy.</h2>
+            <div>
+                <div class="artwork-grid grid-400" id="art">
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script id="artwork-template" type="text/x-handlebars-template">
+            <div id="artwork">
+                <img src="{{imageURL}}" />
+                <p>🎨: <a href="{{artistURL}}">{{artistName}}</a></p>
+            </div>
+        </script>
+        <script>
+            let artworkTemplate = Handlebars.compile(document.getElementById("artwork-template").innerHTML);
+
+            fetch("images.json")
+            .then(response => response.json())
+            .then(data => {
+                let images = data.images;
+                let artists = data.artists;
+                images.forEach(image => {
+                    let context = {};
+                    context['imageURL'] = 'https://cdn.hothusky.art/' + image.url;
+                    context['artistName'] = image.artist;
+                    context['artistURL'] = artists[image.artist];
+                    document.getElementById("art").appendChild(artworkTemplate(context))
+                });
+            })
+        </script>
+    </body>
+</html>

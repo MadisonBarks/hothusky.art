@@ -1,0 +1,43 @@
+/*
+ * Some of this styling shamelessly stolen from syfaro.net
+ * cause Syfaro's image gallery is 10/10.
+ */
+
+body {
+    background-color: #121212;
+}
+
+.artwork-grid {
+    column-gap: 2px
+}
+
+.artwork-grid.grid-200 {
+    columns: 12 200px;
+    grid-auto-columns: 200px
+}
+
+.artwork-grid.grid-400 {
+    columns: 6 400px;
+    grid-auto-columns: 400px
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 2em
+}
+
+.container.art {
+    max-width: 95%
+}
+
+img {
+    border-radius: 5px;
+    margin: 5px auto;
+    display: block;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
